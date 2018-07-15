@@ -1,10 +1,11 @@
 package com.smnsh.phoenix.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.smnsh.phoenix.vo.MessageVO;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HomeController {
+
 
     @RequestMapping("/")
     public String home() {
@@ -15,4 +16,5 @@ public class HomeController {
     public String err404() {
         return "404";
     }
+
 }
